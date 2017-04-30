@@ -19,7 +19,7 @@ public class MyReceiver extends BroadcastReceiver {
         Intent newintent = new Intent();
         newintent.setClass(context, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.
-                getActivity(context, 0, newintent,0);
+                getActivity(context, 0, newintent,PendingIntent.FLAG_CANCEL_CURRENT);
 
         Notification notify = null;
         if (Build.VERSION.SDK_INT >= 16) {
