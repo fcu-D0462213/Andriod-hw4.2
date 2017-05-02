@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 
 public class MyReceiver extends BroadcastReceiver {
- int id=7000;
+ int id=6000;
     @Override
     public void onReceive(Context context, Intent intent) {
         String name=intent.getStringExtra("OName");
